@@ -1,0 +1,5 @@
+/Dataset/FaceData/processed/*
+/Dataset/FaceData/raw/*
+/Models/*
+
+/.DS_Store
