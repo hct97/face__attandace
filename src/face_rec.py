@@ -99,18 +99,18 @@ def main():
 
                             # Lay ra ten va ty le % cua class co ty le cao nhat
                             best_name = class_names[best_class_indices[0]]
-                            print("Name: {}, Probability: {}".format(best_name, best_class_probabilities))
+                            # print("Name: {}, Probability: {}".format(best_name, best_class_probabilities))
 
                             # Ve khung mau xanh quanh khuon mat
                             cv2.rectangle(frame, (bb[i][0], bb[i][1]), (bb[i][2], bb[i][3]), (0, 255, 0), 2)
                             text_x = bb[i][0]
                             text_y = bb[i][3] + 20
 
-                            # Neu ty le nhan dang > 0.5 thi hien thi ten
-                            if best_class_probabilities > 0.5:
+                            # Neu ty le nhan dang > 0.7 thi hien thi ten
+                            if best_class_probabilities > 0.7:
                                 name = class_names[best_class_indices[0]]
                             else:
-                                # Con neu <=0.5 thi hien thi Unknow
+                                # Con neu <=0.8 thi hien thi Unknow
                                 name = "Unknown"
 
                             # Viet text len tren frame
