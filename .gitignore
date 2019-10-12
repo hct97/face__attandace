@@ -1,5 +1,7 @@
 /Dataset/FaceData/processed/*
 /Dataset/FaceData/raw/*
 /Models/*
+/src/__pycache__
+/src/align/__pycache__
 
 /.DS_Store
